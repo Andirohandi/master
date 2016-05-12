@@ -74,12 +74,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<p>1. Encode Helper</p>
 		<code>
-			Example : String <b>"1"</b>, will be show like this <b>"<?php echo encode("1") ?>"</b>.</code>
+			Example : String <b>"1"</b>, will be show like this <b>"<?php echo encode("1") ?>"</b>
 		</code>
 
 		<p>2. Decode Helper - To get back value after encoded</p>
 		<code>
-			Example : String <b>"TVE9PQ=="</b>, will be get back <b>"<?php echo decode("TVE9PQ==") ?>"</b></code>
+			Example : String <b>"TVE9PQ=="</b>, will be get back <b>"<?php echo decode("TVE9PQ==") ?>"</b>
+		</code>
+
+		<p>3. Slug </p>
+		<code>
+			Example : String <b>"Cara Mudah Membuat Web/Blog dengan CodeIgniter"</b>, will be return like this <b>"<?php echo slug("Cara Mudah Membuat Web/Blog dengan CodeIgniter") ?>"</b>
+		</code>
+
+		<p>4. Date For DB - Change date for save to DB YYYY/mm/dd </p>
+		<code>
+			Example : String <b>"05 May 2016"</b>, will be return like this <b>"<?php echo getDates("05 May 2016",1) ?>"</b>
+		</code>
+
+		<p>5. Date For View - Change date for view to be dd - MM - YYYY </p>
+		<code>
+			Example : String <b>"2016/05/05"</b>, will be return like this <b>"<?php echo getDates("2016/05/05",2) ?>"</b>
+		</code>
+
+		<p>6. Pagination - Using ajax and Bootstrap Framework </p>
+		<code>
+			This pagination using to ajax proses and using Bootstrap for that UI
 		</code>
 
 	</div>
