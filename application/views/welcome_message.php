@@ -102,6 +102,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			This pagination using to ajax proses and using Bootstrap for that UI
 		</code>
 
+		<p>7. Admin Lte Template </p>
+		<code>
+			Check it Out <a href="<?php echo site_url('backend/dashboard') ?>"><button>Show</button></a>
+		</code>
+
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
