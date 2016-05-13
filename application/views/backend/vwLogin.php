@@ -17,17 +17,13 @@
             <div class="login-box-body">
                 <br/>
                 <p class = "login-box-msg">Sign in to start your session</p>
-                <?php if ($this->session->flashdata('result') == 2) {
-                    ?>
-                    <div class='alert alert-danger'>
-                        <button type="button" class="close" data-dismiss="alert" area-hidden="true">x</button>
-                        <?php echo validation_errors()." ".$this->session->flashdata('error'); ?>
+                <?php if ($this->session->flashdata('message')): ?>
+                    <div class="alert alert-danger fade in">
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+                        <?= $this->session->flashdata('message') ?>
                     </div>
-                    <?php
-                } else {
-                    
-                }
-                echo form_open('admin/auth')
+                <?php endif;
+                echo form_open('backend/login/authentication')
                 ?>
                 <div class="form-group has-feedback">
                     <input type="text" class="form-control" placeholder="Username" name='username' id='username' value="<?php echo $this->session->flashdata('username') ? $this->session->flashdata('username') : '' ?>" required >
@@ -41,7 +37,7 @@
                     <div class="col-xs-8">
                     </div>
                     <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat" name='login' id='login'>Sign In <i class="fa fa-sign-in"></i></button>
+                        <button type="submit" class="btn btn-primary btn-block btn-flat" name='submit' id='submit'>Sign In <i class="fa fa-sign-in"></i></button>
                     </div>
                 </div>
                 <?php echo form_close() ?>

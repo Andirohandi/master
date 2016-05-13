@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $autoload['packages']	= array();
 
-$autoload['libraries'] 	= array('session','database','ion_auth');
+$autoload['libraries'] 	= array('session','database','ion_auth','form_validation');
 
 $autoload['drivers'] 	= array();
 
